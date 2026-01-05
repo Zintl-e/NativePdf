@@ -138,7 +138,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <span className="text-md font-bold">PDF Tools</span>
               </div>
               <div className="flex flex-wrap justify-center gap-5 text-xs font-medium text-[#757575]">
-                <p className="hover:text-black dark:hover:text-white">Made by Zintle</p>
+                <p className="hover:text-black dark:hover:text-white">Made by Rookie</p>
               </div>
               <div className="text-[#757575] text-[11px]">
                 © {new Date().getFullYear()} Native PDF.
