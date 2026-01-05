@@ -53,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div className="flex items-center justify-center size-6 bg-[#141414] dark:bg-white rounded text-white dark:text-black">
                   <span className="material-symbols-outlined text-[16px]">picture_as_pdf</span>
                 </div>
-                <h1 className="text-lg font-bold tracking-tight hidden sm:block">PDF Tools</h1>
+                <h1 className="text-lg font-bold tracking-tight hidden sm:block">Native PDF</h1>
               </Link>
 
               <div className="flex items-center gap-3 shrink-0">
@@ -138,12 +138,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <span className="text-md font-bold">PDF Tools</span>
               </div>
               <div className="flex flex-wrap justify-center gap-5 text-xs font-medium text-[#757575]">
-                <Link href="#" className="hover:text-black dark:hover:text-white">Privacy</Link>
-                <Link href="#" className="hover:text-black dark:hover:text-white">Terms</Link>
-                <Link href="#" className="hover:text-black dark:hover:text-white">Contact</Link>
+                <p href="#" className="hover:text-black dark:hover:text-white">Made by Zintle</p>
               </div>
               <div className="text-[#757575] text-[11px]">
-                © {new Date().getFullYear()} PDF Tools.
+                © {new Date().getFullYear()} Native PDF.
               </div>
             </div>
           </div>
