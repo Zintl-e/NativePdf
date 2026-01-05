@@ -98,7 +98,7 @@ export default function Home() {
               </Link>
 
               <Link
-                href="https://github.com"
+                href="https://github.com/Zintl-e/NativePdf"
                 target="_blank"
                 className="w-full sm:w-auto px-8 py-3 bg-white dark:bg-neutral-800 border border-[#e0e0e0] dark:border-neutral-700 font-bold rounded-lg hover:bg-gray-50 dark:hover:bg-neutral-700 hover:border-black border-2 transition-colors flex items-center justify-center gap-2"
               >
