@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-jakarta);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Material Symbols Config */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+}
+
+/* CUSTOM TOGGLE STYLES */
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: .5em;
+  padding: .125em;
+  background-image: linear-gradient(to bottom, #d0c4b8, #f5ece5);
+  box-shadow: 0 1px 1px rgb(255 255 255 / .6);
+  font-size: 0.6rem;
+  /* Scaled down for header */
+}
+
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  z-index: 1;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: .375em;
+  width: 3em;
+  height: 1.5em;
+  background-color: #e1dacd;
+  box-shadow: inset 0 0 .0625em .125em rgb(255 255 255 / .2), inset 0 .0625em .125em rgb(0 0 0 / .4);
+  transition: background-color .4s linear;
+}
+
+.toggle-checkbox:checked+.toggle-container {
+  background-color: #f3b519;
+}
+
+.toggle-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: .0625em;
+  border-radius: .3125em;
+  width: 1.375em;
+  height: 1.375em;
+  background-color: #e4ddcf;
+  box-shadow: inset 0 -.0625em .0625em .125em rgb(0 0 0 / .1), inset 0 -.125em .0625em rgb(0 0 0 / .2), inset 0 .1875em .0625em rgb(255 255 255 / .3), 0 .125em .125em rgb(0 0 0 / .5);
+  transition: left .4s;
+}
+
+.toggle-checkbox:checked+.toggle-container>.toggle-button {
+  left: 1.5625em;
+}
+
+.toggle-button-circles-container {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  gap: .125em;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.toggle-button-circle {
+  border-radius: 50%;
+  width: .125em;
+  height: .125em;
+  background-image: radial-gradient(circle at 50% 0, #f6f0e9, #bebcb0);
+}
+
+.tool-card {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
+body {
+  font-family: var(--font-jakarta);
+  -webkit-font-smoothing: antialiased;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+/* Base */
+.quality-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(to right,
+      #000 0%,
+      #000 calc((var(--value) - 0.3) / (0.95 - 0.3) * 100%),
+      #e5e7eb calc((var(--value) - 0.3) / (0.95 - 0.3) * 100%));
+  transition: background 0.25s ease;
+}
+
+/* Dark mode */
+.dark .quality-slider {
+  background: linear-gradient(to right,
+      #fff 0%,
+      #fff calc((var(--value) - 0.3) / (0.95 - 0.3) * 100%),
+      #262626 calc((var(--value) - 0.3) / (0.95 - 0.3) * 100%));
+}
+
+/* Thumb */
+.quality-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: currentColor;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.quality-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+.quality-slider::-webkit-slider-thumb:active {
+  transform: scale(1.25);
+}
+
+/* Firefox */
+.quality-slider::-moz-range-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+@keyframes doodle-sweep {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-doodle-mount {
+  background-size: 300% 300%;
+  animation: doodle-sweep 1.2s ease-out forwards;
+}
