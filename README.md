@@ -1,10 +1,10 @@
 # PDFToolkit
 
-![Project Preview](./public/preview-screenshot.png)
+![Preview](./public/preview.png)
 
 PDFToolkit is a suite of high-performance PDF utilities that processes all files **on the client side**. Your files never leave your device, ensuring total privacy and near-instant processing speeds.
 
-**Link:** [https://pdftools-inky.vercel.app/](https://pdftools-inky.vercel.app/)
+**Link:** [native-pdf.vercel.app](https://native-pdf.vercel.app/)
 
 ---
 
