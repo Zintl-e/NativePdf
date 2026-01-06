@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </Link>
 
               <div className="flex items-center gap-3 shrink-0">
-                {/* DARK MODE TOGGLE */}
+      
                 {/* DARK MODE TOGGLE */}
                 <div className="toggle-wrapper">
                   <input
@@ -93,7 +93,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </a>
 
                   <a
-                    href="https://x.com"
+                    href="https://x.com/Rokieee__"
                     target="_blank"
                     className="group flex items-center px-3 py-2.5
                                rounded-xl
