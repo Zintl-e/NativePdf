@@ -166,7 +166,7 @@ export default function Home() {
                   </a>
               
                   <a
-                    href="https://x.com/Zintlee_"
+                    href="https://x.com/Rokieee__"
                     target="_blank"
                     className="group flex items-center px-4 py-3 rounded-xl border border-transparent hover:border-white hover:bg-white transition-all duration-200"
                   >
