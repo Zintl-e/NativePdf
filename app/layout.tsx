@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   useLayoutEffect(() => {
     const theme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: light)').matches;
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (theme === 'dark' || (!theme && prefersDark)) {
       setDarkMode(true);
