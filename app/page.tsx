@@ -75,7 +75,7 @@ export default function Home() {
 
             <motion.h2 variants={fadeUp} className="text-4xl md:text-6xl font-black tracking-tight leading-[1.1]">
               Your Privacy, Our Priority:
-              <br className="hidden md:block" /> Edit, Merge & Convert PDFs 100% Locally. No Uploads, No Data Leaves Your Device.
+              <br className="hidden md:block text-3xl" /> Edit, Merge & Convert PDFs 100% Locally. No Uploads, No Data Leaves Your Device.
             </motion.h2>
 
             <motion.p
