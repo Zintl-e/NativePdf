@@ -82,7 +82,7 @@ export default function Home() {
               variants={fadeUp}
               className="text-lg md:text-xl text-[#757575] dark:text-gray-400 font-medium max-w-2xl mx-auto"
             >
-             No Uploads, No Data Leaves Your Device. We process your files directly in your browser.
+              We process your files directly in your browser.No Uploads, No Data, Leaves Your Device.
             </motion.p>
 
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
